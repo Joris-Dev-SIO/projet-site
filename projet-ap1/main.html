@@ -1,0 +1,556 @@
+
+<!DOCTYPE html>  
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body id="myPage">
+  <link rel="stylesheet" type="text/css" href="main.css ">
+  <script src="main.js" async></script>
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Accueil</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Coureur</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Épreuves</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Tarif</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+  <a href="SessionsPHP/register.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Connectez-vous</a>
+  <a href="simple-php-shopping-cart/index.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Boutique</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Coureur</a>
+    <a href="#work" class="w3-bar-item w3-button">Épreuves</a>
+    <a href="#pricing" class="w3-bar-item w3-button">tarif</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="SessionsPHP/register.php" class="w3-bar-item w3-button">Connectez-vous</a>
+    <a href="simple-php-shopping-cart/index.php" class="w3-bar-item w3-button">Boutique</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="img/athletisme.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS"><img src="img/MDC.png" ></button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Bienvenue sur mon projet</h4>
+      <h5>De la Maison de la culture <i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="w3-container">
+      <p>Sur le thème de :L'athlétisme</p>
+      
+    </div>
+    <footer class="w3-container w3-teal">
+      <p>De l'élève Techer Joris</p>
+    </footer>
+  </div>
+</div>
+
+
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>L'athlétisme </h2>
+</div>
+
+
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>Coureur</h2>
+<p>Voici les coureurs les plus célébre:</p>
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="img/Haile-Gebreselassie.jpg" alt="Coureur" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Haile Gebreselassie</h3>
+  <p>La plus grande légende de la discipline d’origine éthiopienne c’est lui:Avec plus de 27 records du monde sur plusieurs disciplines et a gagné deux médailles d’or aux J.O.</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="img/usain-bolt.jpg" alt="Coureur" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Usain Bolt</h3>
+  <p>L’athlète jamaïcain Usain Bolt est incontestablement l’un des athlètes les plus impressionnants de l’histoire de la course à pied: Avec 8 records du monde seniors battu, 6 médailles d’or aux J.O et 11 médailles d’or et 2 médailles d’argent au Championnats du Monde.
+</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="img/paula-radcliffe.jpg" alt="Coureur" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Paula Radcliffe</h3>
+  <p>Détentrice du record du monde actuel du marathon (2:15:25), la britannique Paula Radcliffe a remporté 8 des plus grands marathons du monde. Passionnée de course à pied depuis son enfance, elle est incontestablement la plus grande athlète de la discipline de tous les temps.</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="img/emil.jpg" alt="Coureur" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Emil Zatopek</h3>
+  <p>Désigné par beaucoup comme le  plus grand coureur de tout les temps, Emil Zatopek est un coureur Tchèque ayant marqué l’histoire du sport dans les années 1950 lorsqu’il remporta trois médailles d’or (5000 m, 10000m, marathon) lors des J.O. Il est également connu pour avoir disputé plus de 69 courses longues distance de 1949 à 1951 sans en perdre une seule.</p>
+</div>
+
+</div>
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+<div class="w3-quarter">
+<h2>Activités</h2>
+<p>Le terme « athlétisme » recouvre un ensemble d’activités variées regroupées en deux grandes catégories : l’athlétisme de stade ou en salle comprenant les courses, les sauts, les lancers et les épreuves combinées, et les épreuves hors stade comprenant notamment la marche athlétique, le marathon et le cross-country.</p>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="img/World_athletics.jpg" alt="Courses de fond et de demi-fond" style="width:100%">
+  <div class="w3-container">
+  <h3>Courses de demi-fond</h3>
+  <h4>Les courses de demi-fond sont ainsi nommées car elles se disputent sur des distances intermédiaires comprises entre le sprint et le fond (de 800 à 3 000 mètres). Parmi toutes les épreuves reconnues par l'IAAF, seules le 800 m et le 1 500 m figurent au programme des Jeux olympiques ou des championnats du monde.</h4>
+  
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="img/110m_Helsinki.jpg" alt="Courses de haies" style="width:100%">
+  <div class="w3-container">
+  <h3>Courses de haies</h3>
+  <h4>Les courses avec obstacles, contrairement à la plupart des disciplines athlétiques. Le 110 m haies, tout comme le 100 m haies, son équivalent féminin, est une épreuve de sprint consistant à franchir dix haies hautes distancées entre elles de 9,14 m pour les hommes et de 8,50 m pour les femmes</h4>
+  
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="img/330px-Shotput.jpg" alt="Relais" style="width:100%">
+  <div class="w3-container">
+  <h3>Lancers de poids</h3>
+  <h4>Le poids de l'engin est fixé à 7,257 kg en référence au boulet de canon, et la technique de lancer évolue entre la position figée et la prise d'élan. Le principe est de projeter le boulet le plus loin possible à partir d'un cercle comportant un butoir situé dans l'aire de lancer jusqu'à la zone de chute.</h4>
+  
+  </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+<!-- Pricing Row -->
+<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+    <h2>Tarif</h2>
+    <p>Voici les differents tarif.</p><br>
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">Debutent </p>
+        </li>
+        <li class="w3-padding-16"><b>Terrain</b> ouvert</li>
+        <li class="w3-padding-16"><b>Matériel</b> non-fournie</li>
+        <li class="w3-padding-16"><b>Coach</b> non-fournie</li>
+        <li class="w3-padding-16"><b>Conpétition</b> non-admis</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide"><i class=""></i> 10 €</h2>
+          <span class="w3-opacity">par mois</span>
+        </li>
+        
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge">Semi-Pro</p>
+        </li>
+        <li class="w3-padding-16"><b>Terrain</b> ouvert</li>
+        <li class="w3-padding-16"><b>Matériel</b> fournie</li>
+        <li class="w3-padding-16"><b>Coach</b> non-fournie</li>
+        <li class="w3-padding-16"><b>Conpétition</b> admis</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide"><i class=""></i> 95 €</h2>
+          <span class="w3-opacity">par mois</span>
+        </li>
+       
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">Pro</p>
+        </li>
+        <li class="w3-padding-16"><b>Terrain</b> ouvert</li>
+        <li class="w3-padding-16"><b>Matériel</b> fournie</li>
+        <li class="w3-padding-16"><b>Coach</b> fournie</li>
+        <li class="w3-padding-16"><b>Conpétition</b> admis</li>
+        <li class="w3-padding-16">
+          <h2 class="shop-item-price"><i class="shop-item-price"></i> 150 €</h2>
+
+          <span class="w3-opacity">par mois</span>
+
+        </li>
+        
+      </ul>
+
+    </div>
+
+         <li class="w3-theme-l5 w3-padding-24">
+
+          <a href="formulaire2.php"  ><i class="fa fa-check"></i> Enregistrer-vous</button>
+           
+        </li>
+
+        </div>
+
+
+<!-- Partie calculette -->
+     <table class="calculatrice" id="calc">
+            <tr >
+                <td colspan="4" class="calc_td_resultat">
+                    <input type="text" readonly="readonly" name="calc_resultat" id="calc_resultat" class="calc_resultat" onkeydown="javascript:key_detect_calc('calc',event);" />
+                </td>
+            </tr>
+            <tr>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="CE" onclick="javascript:f_calc('calc','ce');" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="&larr;" onclick="javascript:f_calc('calc','nbs');" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="%" onclick="javascript:f_calc('calc','%');" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="+" onclick="javascript:f_calc('calc','+');" />
+                </td>
+            </tr>
+            <tr>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="7" onclick="javascript:add_calc('calc',7);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="8" onclick="javascript:add_calc('calc',8);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="9" onclick="javascript:add_calc('calc',9);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="-" onclick="javascript:f_calc('calc','-');" />
+                </td>
+            </tr>
+                        <tr>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="4" onclick="javascript:add_calc('calc',4);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="5" onclick="javascript:add_calc('calc',5);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="6" onclick="javascript:add_calc('calc',6);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="x" onclick="javascript:f_calc('calc','*');" />
+                </td>
+            </tr>
+            <tr>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="1" onclick="javascript:add_calc('calc',1);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="2" onclick="javascript:add_calc('calc',2);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="3" onclick="javascript:add_calc('calc',3);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="&divide;" onclick="javascript:f_calc('calc','');" />
+                </td>
+            </tr>
+            <tr>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="0" onclick="javascript:add_calc('calc',0);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="&plusmn;" onclick="javascript:f_calc('calc','+-');" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="," onclick="javascript:add_calc('calc','.');" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="=" onclick="javascript:f_calc('calc','=');" />
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript">
+                document.getElementById('calc').onload=initialiser_calc('calc');
+        </script>
+        <!-- Partie calculette -->
+
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contactez Nous</span></div>
+      <h3>Adresse</h3>
+      <p>Si vous voulez vous inscrit dans un club.</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;Nîmes, France</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;+00 1515151515</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;test@test.com</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+      <div class="w3-section">      
+        <label>Name</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Prenom</label>
+        <input class="w3-input" type="text" name="Prenom" required>
+      </div>
+     
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input" type="Email" name="Email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Message</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>  
+      <div class="w3-section">      
+        
+      <button type="submit" class="w3-button w3-right w3-theme">Envoyer</button> 
+    </div>
+  </div> 
+</form>
+</div>
+
+
+
+
+
+
+<!-- Classes Timetable Section Begin -->
+    <section class="classes-timetable spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Planning</h2>
+                    </div>
+                    <div class="nav-controls">
+                        <ul>
+                            <li class="active" data-tsfilter="all">Courses à pied</li>
+                            <li data-tsfilter="gym">Courses de haies</li>
+                            <li data-tsfilter="crossfit">Sauts</li>
+                            <li data-tsfilter="cardio">Lancers</li>
+                            <li data-tsfilter="body">Relais</li>
+                            <li data-tsfilter="yoga">Print</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="schedule-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Lundi</th>
+                                    <th>Mardi</th>
+                                    <th>Mercredi</th>
+                                    <th>Jeudi</th>
+                                    <th>Vendredi</th>
+                                    <th>Samedis</th>
+                                    <th>Dimanche</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="workout-time">10.00</td>
+                                    <td class="hover-bg ts-item" data-tsmeta="gym">
+                                        <h6>Courses à pied</h6>
+                                        <span>10.00 - 11.30</span>
+                                        
+                                            
+                                        
+                                    </td>
+                                    <td></td>
+                                    <td class="hover-bg ts-item" data-tsmeta="yoga">
+                                        <h6>Courses de haies</h6>
+                                        <span>10.00 - 11.30</span>
+                                        
+                                    </td>
+                                    <td></td>
+                                    <td class="hover-bg ts-item" data-tsmeta="body">
+                                        <h6>Relais</h6>
+                                        <span>10.00 - 12.00</span>
+                                        
+                                    </td>
+                                    <td></td>
+                                    <td class="hover-bg ts-item" data-tsmeta="cardio">
+                                        <h6>Print</h6>
+                                        <span>10.00 - 11.00</span>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="workout-time">14.00</td>
+                                    <td></td>
+                                    <td class="hover-bg ts-item">
+                                        <h6>Sauts</h6>
+                                        <span>14.00 - 16.00</span>
+                                        
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="hover-bg ts-item" data-tsmeta="gym">
+                                        <h6>Courses à pied</h6>
+                                        <span>14.00 - 15.30</span>
+                                        
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="workout-time">16.00</td>
+                                    <td class="hover-bg ts-item" data-tsmeta="cardio">
+                                        <h6>Lancers</h6>
+                                        <span>16.00 - 18.00</span>
+                                        
+                                    </td>
+                                    <td></td>
+                                    <td class="hover-bg ts-item" data-tsmeta="gym">
+                                        <h6>Print</h6>
+                                        <span>16.00 - 17.00</span>
+                                        
+                                    </td>
+                                    <td></td>
+                                    <td class="hover-bg ts-item" data-tsmeta="yoga">
+                                        <h6>Sauts</h6>
+                                        <span>16.00 - 17.30</span>
+                                       
+                                    </td>
+                                    <td></td>
+                                    <td class="hover-bg ts-item" data-tsmeta="gym">
+                                        <h6>Courses de haies</h6>
+                                        <span>16.00 - 17.30</span>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="workout-time">18.00</td>
+                                    <td class="hover-bg ts-item" data-tsmeta="body">
+                                        <h6>Print</h6>
+                                        <span>18.00 - 19.00</span>
+                                        
+                                    </td>
+                                    <td></td>
+                                    <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                                        <h6>Relais</h6>
+                                        <span>18.00 - 19.00</span>
+                                        
+                                    </td>
+                                    <td></td>
+                                    <td class="hover-bg ts-item" data-tsmeta="cardio">
+                                        <h6>Lancers</h6>
+                                        <span>18.00 - 19.00</span>
+                                        
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Trainer Table Schedule Section End -->
+
+
+<!-- Image of location/map -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1720.4335485362294!2d4.368533102794166!3d43.83313630166391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b42d106a0ee6ef%3A0xd59b36efeb3d20fb!2s1%20Av.%20du%20G%C3%A9n%C3%A9ral%20Leclerc%2C%2030000%20N%C3%AEmes!5e0!3m2!1sfr!2sfr!4v1610290237587!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+
+.classes-timetable {
+	padding-top: 0; 
+}
+.classes-timetable .nav-controls {
+	text-align: center;
+	margin-bottom: 42px;
+}
+.classes-timetable .nav-controls ul li {
+	list-style: none;
+	font-size: 16px;
+	color: #111111;
+	font-weight: 600;
+	display: inline-block;
+	margin-right: 48px;
+	text-transform: uppercase;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+}
+.classes-timetable .nav-controls ul li:last-child {
+	margin-right: 0;
+}
+.schedule-table.filtering .ts-item {
+	opacity: 0;
+}
+.schedule-table.filtering .ts-item.show {
+	opacity: 1;
+}
+.schedule-table table {
+	width: 100%;
+	text-align: center;
+	border: 1px solid #e1e1e1;
+}
+.schedule-table table thead tr th {
+	font-size: 16px;
+	color: #000000;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 25px 0;
+	background: #f0f0f0;
+}
+.schedule-table table tbody tr {
+	border-top: 1px solid #e5e5e5;
+}
+.schedule-table table tbody tr td {
+	width: 146px;
+	background: #ffffff;
+	border-right: 1px solid #e5e5e5;
+	padding: 18px 0;
+	position: relative;
+	z-index: 1;
+}
+.schedule-table table tbody tr td.ts-item {
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+.schedule-table table tbody tr td:after {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-gradient(linear, left top, right top, from(#eb3c5a), to(#f67831));
+	background: -o-linear-gradient(left, #eb3c5a, #f67831);
+	background: linear-gradient(to right, #eb3c5a, #f67831);
+	content: "";
+	opacity: 0;
+	z-index: -1;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.schedule-table table tbody tr td.hover-bg:hover h6 {
+	color: #ffffff;
+}
+.schedule-table table tbody tr td.hover-bg:hover span {
+	color: #ffffff;
+}
+.schedule-table table tbody tr td.hover-bg:hover .trainer-name {
+	color: #ffffff;
+}
+.schedule-table table tbody tr td.hover-bg:hover:after {
+	opacity: 1;
+}
+.schedule-table table tbody tr td.workout-time {
+	font-size: 16px;
+	color: #000000;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.schedule-table table tbody tr td h6 {
+	font-weight: 600;
+	color: #f15d44;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+.schedule-table table tbody tr td span {
+	font-size: 14px;
+	font-weight: 600;
+	color: #111111;
+}
+.schedule-table table tbody tr td .trainer-name {
+	font-size: 14px;
+	color: #6b6b6b;
+}
+
+.calculatrice
+{
+        width:300px;
+        height:300px;
+        background-color:#eeeeee;
+        border:2px solid #CCCCCC;
+        margin:auto;
+        padding-left:5px;
+        padding-bottom:5px;
+}
+.calculatrice td
+{
+        height:16.66%;
+}
+.calc_td_resultat
+{
+        text-align:center;
+}
+.calc_resultat
+{
+        width:90%;
+        text-align:right;
+}
+.calc_td_calculs
+{
+        text-align:center;
+}
+.calc_calculs
+{
+        width:90%;
+        text-align:left;
+}
+.calc_td_btn
+{
+        width:25%;
+        height:100%;
+}
+.calc_btn
+{
+        width:90%;
+        height:90%;
+        font-size:20px;
+}
